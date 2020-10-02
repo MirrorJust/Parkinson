@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/main-style.css' %}" type="text/css">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+</head>
+<body>
+    <header>
+        <!--<img src="{% static 'img/calendar.svg' %}" height="44px" width="150px">-->
+        <menu>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <li class="main-list-item"><a href="#">Наша компания</a></li>
+                    </div>
+                    <div class="col-md-3">
+                        <li class="main-list-item"><a href="#">Стоимоcть услуг</a></li>
+                    </div>
+                    <div class="col-md-3">
+                        <li class="main-list-item"><a href="#">Контакты</a></li>
+                    </div>
+                    <div class="col-md-3">
+                        <li class="main-list-item"><a href="{% url 'profilePage' %}" id="sign" >Вход</a></li>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </header>
+    <!--<div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12">
+                <article id="form-sign-block">
+                    <form id="sign-in-form" action="page/profile/user-main-profile-page.html" method="POST">
+                        <img src="img/close.svg" alt="Закрыть" id="img_close_form">
+                        <h2>Войти в личный кабинет</h2>
+                        
+                        <div class="group">
+                            <label for="login-id">Логин</label>
+                            <input type="text" nmae="login" id="login-id">
+                        </div>
+                        <br>
+                        <div class="group">
+                            <label for="password-id">Пароль</label>
+                            <input type="password" name="password" id="password-id">
+                        </div>
+                        <br>
+                        <div class="group">
+                            <center><button type="submit">Войти</button></center>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="Js/script.js"></script>-->
+    
+    
+</body>
+</html>
