@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.main-block-page {
+    border-bottom: lightgray 1px solid;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.description-main-block {
+    width: 70%;
+}
+
+.list-value {
+    width: 50%;
+}
+
+/* Стилизация пунктов списка определений - раскрытие------------------------------------ */
+details summary {
+    display: block;
+    outline-style: none;  /* удалить обводку при фокусе */
+    cursor: pointer;
+}
+
+details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+}
+
+/* Стилизация пунктов списка определений - раскрытие------------------------------------ */
+
+/* Стилизация пунктов списка определений - общие стили------------------------------------ */
+
+dl {
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+details {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+summary dt {
+    color: skyblue;
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 80%;
+    border-bottom: lightgray 1px solid;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 70%;
+
+    padding: 20px;
+
+    background-color: #ecf0f1;
+}
+
+.item-exercise {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: white;
+}
+
+.item-exercise:last-child {
+    margin-bottom: 0px;
+}
+
+.video-content {
+    text-align: center;
+}

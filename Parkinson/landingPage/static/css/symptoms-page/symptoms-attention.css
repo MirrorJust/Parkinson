@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-block-page {
+    width: 80%;
+    border-bottom: lightgray 1px solid;
+    margin-bottom: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.description-main-content {
+    margin-top: 40px;
+    width: 70%;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.block-list-description {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    
+}
+
+.block-list-description:last-child {
+    margin-bottom: 0;    
+}
+
+.list-item {
+    padding: 10px;
+}
+
+/*----------------------------Выделение пункта меню в котором находимся--------------------------*/
+
+#second_item_main_menu {
+    background-color: #e5e3e3;
+}
+
+
+/*----------------------------Выделение пункта меню в котором находимся--------------------------*/

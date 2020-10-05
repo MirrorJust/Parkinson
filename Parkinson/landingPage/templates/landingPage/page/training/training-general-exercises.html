@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общие упражнения</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/user-menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/training-page/training-general.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/plyr.css' %}" type="text/css">
+    <style>
+        #third_item_main_menu {
+            background-color: #e5e3e3;
+        }
+        .submenu-traning-item:nth-child(2) {
+            background-color: #E0E0E0;
+            border: 2px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <menu class="vertical-menu">
+        <li class="menu-v-item" id="first_item_main_menu">
+            <img src="{% static 'img/profile.jpg' %}" alt="картинка не отображается" width="100%" height="80px">
+        </li>
+        <li class="menu-v-item" id="second_item_main_menu">
+            <img src="{% static 'img/traning.svg' %}" alt="" width="50px" height="50px">
+        </li>
+        <li class="menu-v-item" id="third_item_main_menu">
+            <img src="{% static 'img/calendar.svg' %}" alt="" width="50px" height="50px">
+        </li>
+        <li class="menu-v-item" id="fourth_item_main_menu">
+            <img src="{% static 'img/message.svg' %}" alt="" width="50px" height="50px">
+        </li>
+        <li class="menu-v-item" id="fifth_item_main_menu">
+            <img src="{% static 'img/message.svg' %}" alt="" width="50px" height="50px">
+        </li>
+    </menu>
+    <div class="submenu-profile-block" id="submenu-profile-block">
+        <h2>Профиль</h2>
+        <ul class="sb-menu submenu-profile">
+            <li class="submenu-profile-item"><a href="{% url 'profilePage' %}" class="sb-link submenu-profile-link">Тут хз</a></li>
+        </ul>
+    </div>
+    <div class="submenu-knowledge-base-block" id="submenu-knowledge-base-block">
+        <h2>База знаний по <br> болезни Паркинсона</h2>
+        <ul class="sb-menu submenu-knowledge-base">
+            <li class="submenu-knowledge-base-item"><a href="{% url 'symptomsSymptoms' %}" class="sb-link submenu-knowledge-base-link">Симптомы</a></li>
+            <li class="submenu-knowledge-base-item"><a href="{% url 'symptomsTreatment' %}" class="sb-link submenu-knowledge-base-link">Лечение</a></li>
+            <li class="submenu-knowledge-base-item"><a href="{% url 'symptomsComplications' %}" class="sb-link submenu-knowledge-base-link">Осложнения</a></li>
+            <li class="submenu-knowledge-base-item"><a href="{% url 'symptomsAttention' %}" class="sb-link submenu-knowledge-base-link">На что нужно <br> обратить внимание</a></li>
+        </ul>
+    </div>
+    <div class="submenu-training-block" id="submenu-training-block">
+        <h2>Обучение</h2>
+        <ul class="sb-menu submenu-training">
+            <li class="submenu-training-item"><a href="{% url 'trainingRules' %}" class="sb-link submenu-training-link">Правила выполнения упражнений</a></li>
+            <li class="submenu-training-item"><a href="{% url 'trainingGeneral' %}" class="sb-link submenu-training-link">Общие упражнения</a></li>
+            <li class="submenu-training-item"><a href="{% url 'trainingBalance' %}" class="sb-link submenu-training-link">Упражнения на баланс</a></li>
+            <li class="submenu-training-item"><a href="{% url 'trainingFreezingWalk' %}" class="sb-link submenu-training-link">Как справиться с «заморозкой ходьбы»</a></li>
+            <li class="submenu-training-item"><a href="{% url 'trainingPrivate' %}" class="sb-link submenu-training-link">Частные упражнения</a></li>
+        </ul>
+    </div>
+    <div class="submenu-memory-training-block" id="submenu-memory-training-block">
+        <h2>Тренировка памяти</h2>
+        <ul class="sb-menu submenu-memory-training">
+            <li class="submenu-memory-training-item"><a href="{% url 'memoryMain' %}" class="sb-link submenu-memory-training-link">Упражнения на память</a></li>
+        </ul>
+    </div>
+    <div class="submenu-feedback-block" id="submenu-feedback-block">
+        <h2>Обратная связь</h2>
+        <ul class="sb-menu submenu-feedback">
+            <li class="submenu-feedback-item"><a href="{% url 'feedback' %}" class="sb-link submenu-feedback-link">Напишите нам ваши пожелания и мы с вами свяжемся</a></li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <h1>Общие упражнения</h1>
+        <section class="main-content">
+            <div class="item-exersise">
+                <h3>Растяжка шеи</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="item-exercise">
+                <h3>Снижение тремора</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="item-exercise">
+                <h3>Укрепление таза</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <img src="{% static 'img/arrow-up.ico' %}" alt="" height="40px" width="40px" id="arrowUp">
+    </main>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'Js/color-menu/traning-menu-color.js' %}"></script>
+    <script src="{% static 'Js/color-menu/general-color-menu.js' %}"></script>
+    <script src="{% static 'Js/arrow-up.js' %}"></script>
+    <script src="{% static 'Js/plyr.js' %}"></script>
+    <script>
+        const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+    </script>
+</body>
+</html>
