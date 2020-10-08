@@ -1,0 +1,51 @@
+{% extends 'userCabinet/base.html' %}
+
+    {% block title %}На что нужно обратить внимание{% endblock %}
+
+    {% load static %}
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/user-menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/symptoms-page/symptoms-attention.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+    <style>
+        #second_item_main_menu {
+            background-color: #e5e3e3;
+        }
+        .submenu-knowledge-base-item:last-child {
+            background-color: #E0E0E0;
+            border: 2px solid lightgray;
+        }
+    </style>
+    {% endblock %}
+
+    {% block main %}
+    <section class="main-block-page">
+            <h1>На что нужно обратить внимание</h1>
+        </section>
+    <section class="description-main-content">
+        <div class="block-list-description firstBlock" id="firstBlock">
+            <ol class="list-rules">
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+                <li class="list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam iusto incidunt nisi saepe aliquid qui ratione esse assumenda quam.</li>
+            </ol>
+        </div>
+    </section>
+    <img src="../../img/arrow-up.ico" alt="" height="40px" width="40px" id="arrowUp">
+    {% endblock %}
+
+    {% block script %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'Js/color-menu/symptoms-menu-color.js' %}"></script>
+    <script src="{% static 'Js/color-menu/general-color-menu.js' %}"></script>
+    <script src="{% static 'Js/arrow-up.js' %}"></script>
+    {% endblock %}

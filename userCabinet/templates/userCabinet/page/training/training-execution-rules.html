@@ -1,0 +1,62 @@
+{% extends 'userCabinet/base.html' %}
+
+    {% block title %}Правила выполнения упражнений{% endblock %}
+
+    {% load static %}
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/user-menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/symptoms-page/symptoms-treatment.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+    <style>
+        #third_item_main_menu {
+            background-color: #e5e3e3;
+        }
+        .submenu-training-item:nth-child(1) {
+            background-color: #E0E0E0;
+            border: 2px solid lightgray;
+        }
+    </style>
+    {% endblock %}
+
+
+    {% block main %}
+        <section class="main-block-page"><h1>Правила выполнения упражнений</h1>
+            <ul class="list mainBlockList">
+                <li class="item mainBlockList-item"><a href="#firstBlock" class="link mainBlockList-link">Безопасность</a> </li>
+                <li class="item mainBlockList-item"><a href="#secondBlock" class="link mainBlockList-link">Что не нужно делать</a></li>
+                <li class="item mainBlockList-treatment-item"><a href="#thirdBlock" class="mainBlockList-link">Как нужно делать</a></li>
+            </ul>
+        </section>
+        <section class="description-main-content">
+            <div class="block-list-description firstBlock" id="firstBlock">
+                <h3>Безопасность</h3>
+                <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates, magni explicabo dolor exercitationem, consequuntur temporibus iure delectus placeat nihil enim atque? Esse odit magni quos! Eveniet tempore in eaque quaerat dignissimos! Quidem veniam, saepe consectetur numquam adipisci ipsa quo ex fugit impedit laudantium dolorem! Natus beatae voluptatem similique cum maiores sequi quidem voluptatum odit obcaecati. Dolore, fuga ut vel at facilis eaque reiciendis inventore sequi iste unde velit, rem animi assumenda eligendi tempora possimus voluptates reprehenderit eveniet, neque doloremque. Hic quo nemo maiores, inventore cupiditate labore, nihil excepturi amet dolorum impedit fugiat consequuntur architecto.
+                </p>
+                <ul>
+                    <li>Соблюдаь дистанцию</li>
+                    <li>Не перенапрягаться</li>
+                    <li>Обезопасить комнату</li>
+                </ul>
+            </div>
+            <div class="block-list-description secondBlock" id="secondBlock">
+                <h2>Что не нужно делать</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eos, similique facere, alias veniam error ullam ducimus libero ipsum, nihil molestiae quasi blanditiis cumque praesentium voluptatum eligendi at! Alias doloribus laudantium voluptatem maxime id atque sint mollitia velit voluptate ut possimus laboriosam cupiditate ab odit aliquid quis commodi sit corporis, eum eius explicabo ratione expedita nulla dolore. Nulla impedit ea voluptate quam? Distinctio illum voluptas fugit, cumque quasi nostrum maiores a accusamus ducimus provident quaerat labore est perspiciatis officiis ratione minima corrupti amet exercitationem iusto laudantium obcaecati, dolor eius. Repudiandae a temporibus quasi totam aliquam quam eveniet aut, impedit amet.</p>
+            </div>
+            <div class="block-list-description thirdBlock" id="thirdBlock">
+                <h2>Как нужно делать</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere obcaecati velit iure. Sapiente voluptatibus fugit eveniet culpa ipsam vitae alias quisquam, odit dolorum eum temporibus explicabo error aperiam porro exercitationem delectus laboriosam quaerat atque illum non quis. Doloremque neque dolores delectus odio commodi laudantium aliquid dignissimos. Tempora sunt quaerat enim numquam est, veritatis voluptatem ad deleniti. Sed voluptatum, molestiae reprehenderit hic voluptates sequi quae dolor eum fuga numquam doloremque accusamus voluptas, ipsam nisi nemo saepe veritatis natus facere cumque magnam labore facilis nesciunt rem? Dicta ipsum nesciunt quod quo est voluptatibus totam hic culpa excepturi officiis delectus, voluptas fugiat eveniet numquam quidem voluptatum natus placeat quasi quibusdam corporis porro adipisci?
+                </p>
+            </div>
+        </section>
+        <img src="{% static 'img/arrow-up.ico' %}" alt="" height="40px" width="40px" id="arrowUp">
+    {% endblock %}
+
+    {% block script %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'Js/color-menu/traning-menu-color.js' %}"></script>
+    <script src="{% static 'Js/color-menu/general-color-menu.js' %}"></script>
+    <script src="{% static 'Js/arrow-up.js' %}"></script>
+    {% endblock %}

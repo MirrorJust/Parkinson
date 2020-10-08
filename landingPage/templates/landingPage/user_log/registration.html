@@ -1,0 +1,27 @@
+{% extends 'landingPage/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/registration.css' %}" type="text/css">
+{% endblock %}
+
+    {% block content %}
+        {% load crispy_forms_tags %}
+        <div class="container">
+            <div class="form-section">
+                <h2>Регистрация</h2>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-primary">Зарегестрироваться</button>
+                </form>
+                <hr>
+                <p>Уже зарегистрированны? <a href="{% url 'userLog' %}">Войти</a></p>  
+            </div>
+        </div>
+        {% endblock %}
+

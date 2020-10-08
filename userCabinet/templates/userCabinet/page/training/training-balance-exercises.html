@@ -1,0 +1,67 @@
+{% extends 'userCabinet/base.html' %}
+
+    {% block title %}Упражнения на баланс{% endblock %}
+
+    {% load static %}
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/user-menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/training-page/training-general.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/plyr.css' %}" type="text/css">
+    <style>
+        #third_item_main_menu {
+            background-color: #e5e3e3;
+        }
+        .submenu-training-item:nth-child(3) {
+            background-color: #E0E0E0;
+            border: 2px solid lightgray;
+        }
+    </style>
+    {% endblock %}
+
+    {% block main %}
+        <h1>Упражнения на баланс</h1>
+        <section class="main-content">
+            <div class="item-exercise">
+                <h3>Растяжка шеи</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="item-exercise">
+                <h3>Снижение тремора</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="item-exercise">
+                <h3>Укрепление таза</h3>
+                <p class="des-video">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae sint placeat delectus suscipit aspernatur sed ut a eos, distinctio possimus saepe voluptates nisi soluta corporis facere dolores, pariatur assumenda?</p>
+                <div class="video-content">
+                    <video poster="../../img/poster/slider-1.jpg" playsinline controls class="js-player">
+                        <source src="../../video/test.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <img src="{% static 'img/arrow-up.ico' %}" alt="" height="40px" width="40px" id="arrowUp">
+    {% endblock %}
+
+    {% block script %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'Js/color-menu/traning-menu-color.js' %}"></script>
+    <script src="{% static 'Js/color-menu/general-color-menu.js' %}"></script>
+    <script src="{% static 'Js/arrow-up.js' %}"></script>
+    <script src="{% static 'Js/plyr.js' %}"></script>
+    <script>
+        const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+    </script>
+    {% endblock %}

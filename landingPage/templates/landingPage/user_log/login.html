@@ -1,0 +1,26 @@
+{% extends 'landingPage/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block title %}Авторизация на сайте{% endblock %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/registration.css' %}" type="text/css">
+{% endblock %}
+
+    {% block content %}
+        {% load crispy_forms_tags %}
+        {% load static %}
+        <div class="container">
+            <div class="form-section">
+                <h2>Авторизация</h2>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+                <hr>
+                <p>Нет профиля? <a href="{% url 'userRegistration' %}">Зарегестрироваться</a></p> 
+            </div>
+        </div>
+        {% endblock %}
+

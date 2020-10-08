@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+menu .container,
+menu .row {
+    height: 100%;
+}
+
+menu {
+    background-color: #2c3e50;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-list-item {
+    list-style-type: none;
+    display: inline;
+}
+
+
+.main-list-item a {
+    color: white;
+}
+
+.main-list-item a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+
+

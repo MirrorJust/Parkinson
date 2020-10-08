@@ -1,0 +1,33 @@
+{% extends 'userCabinet/base.html' %}
+
+    {% block title %}Профиль пользователя{% endblock %}
+
+    {% load static %}
+
+    {% block css %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/user-menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/no-page.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+    <style>
+        .submenu-profile-item {
+            background-color: #E0E0E0;
+            border: 2px solid #lightgray;
+        }
+
+        .submenu-profile-item:first-child {
+            background-color: #E0E0E0;
+            border: 2px solid lightgray;
+        }
+    </style>
+    {% endblock %}
+
+
+    {% block main %}{% endblock %}
+
+    {% block script %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'Js/arrow-up.js'%}"></script>
+    <script src="{% static 'Js/color-menu/general-color-menu.js' %}"></script>
+    <script src="{% static 'Js/color-menu/profile-menu-color.js' %}"></script>
+    {% endblock %}
